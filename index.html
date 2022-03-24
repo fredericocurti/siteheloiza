@@ -40,13 +40,10 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:description"
     content="Excelência que só a experiência e o trabalho bem feito são capazes de alcançar" />
-  <meta name="description" content="Excelência que só a experiência e o trabalho bem feito são capazes de 
-alcançar" />
+  <meta name="description" content="Excelência que só a experiência e o trabalho bem feito são capazes de alcançar" />
   <link rel="stylesheet" type="text/css"
     href="https://static1.squarespace.com/static/sitecss/568470e92399a3371e6b7f0b/30/50521cf884aeb45fa5cfdb80/568470e92399a3371e6b7f12/953/site.css" />
-    <link rel="stylesheet" type="text/css"
-    href="./style.css" />
-
+  <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 
 <body
@@ -58,11 +55,15 @@ alcançar" />
         <nav class="main-nav mobileNav">
           <ul>
             <li class="page-collection active-link">
-              <a href="/curriculo">Currículo</a>
+              <a href="#page">Currículo</a>
             </li>
 
-            <li class="page-collection">
-              <a href="/contact">Contato</a>
+            <li class="page-collection active-link">
+              <a href="#curator-feed-default-feed-layout">Feed</a>
+            </li>
+
+            <li class="page-collection active-link">
+              <a href="#footer">Contato</a>
             </li>
           </ul>
         </nav>
@@ -160,7 +161,6 @@ alcançar" />
             <div class="col sqs-col-12 span-12">
               <div class="html-block sqs-block-html" data-block-type="2">
                 <h2 style="text-align: center; white-space: pre-wrap"><strong>34 ANOS</strong> DE EXPERIÊNCIA</h2>
-                <p style="text-indent: 0pt; text-align: left"><br /></p>
                 <section>
                   <h2>Formação</h2>
                   <p>Bacharelado em Letras com Habilitação em Tradução</p>
@@ -538,6 +538,18 @@ alcançar" />
           d="M41.1,25H22.9l9.1,7.1L41.1,25z M44,26.6l-12,9.3l-12-9.3V39h24V26.6z M0,0v64h64V0H0z M47,42H17V22h30V42z" />
       </symbol>
     </svg>
+    <script>
+      const nav = document.getElementById("mobileNav")
+      document.getElementById("mobileMenuLink").onclick = (ev) => {
+        if (nav.style.visibility === "visible") {
+          nav.style.visibility = "hidden";
+          nav.style.maxHeight = "0px";
+        } else {
+          nav.style.visibility = "visible";
+          nav.style.maxHeight = "240px";
+        }
+      }
+    </script>
 </body>
 
 </html>
